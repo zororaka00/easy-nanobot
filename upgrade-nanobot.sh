@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ugrade-nanobot.sh
+# upgrade-nanobot.sh
 # Simple upgrade script for nanobot installation maintained via 'uv'.
 # Stops tmux, upgrades nanobot from the GitHub repo, and restarts the gateway.
 

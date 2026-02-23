@@ -10,7 +10,7 @@ A helper script to install and configure [nanobot-ai](https://github.com/HKUDS/n
 |---|---|
 | `setup-nanobot.sh` | Main installer script. Reads `~/easy-nanobot/config.json` and merges values into `~/.nanobot/config.json` |
 | `config.json.example` | Example config — copy and edit before running the installer |
-| `ugrade-nanobot.sh` | Upgrade script — stops tmux, upgrades nanobot via `uv`, and restarts the gateway |
+| `upgrade-nanobot.sh` | Upgrade script — stops tmux, upgrades nanobot via `uv`, and restarts the gateway |
 
 ---
 
@@ -59,8 +59,8 @@ bash ~/easy-nanobot/setup-nanobot.sh
 ## ⬆️ Upgrading
 
 ```bash
-chmod +x ~/easy-nanobot/ugrade-nanobot.sh
-bash ~/easy-nanobot/ugrade-nanobot.sh
+chmod +x ~/easy-nanobot/upgrade-nanobot.sh
+bash ~/easy-nanobot/upgrade-nanobot.sh
 ```
 
 > ⚠️ **Warning:** The upgrade script runs `tmux kill-server`, which **terminates all active tmux sessions** on the host. Save your work before running it.
