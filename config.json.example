@@ -1,0 +1,26 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "openrouter/gpt-4o-mini"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+      "allowFrom": [123456789]
+    }
+  },
+  "providers": {
+    "openrouter": {
+      "apiKey": "YOUR_OPENROUTER_API_KEY_HERE"
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "apiKey": "YOUR_WEB_SEARCH_API_KEY_HERE"
+      }
+    }
+  }
+}
